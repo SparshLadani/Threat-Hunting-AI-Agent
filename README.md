@@ -34,7 +34,7 @@ graph TD
 |------|-------------|
 | `fetch_logs_node` | Fetches Sysmon EventID 1 (Process Creation) logs from Elastic SIEM |
 | `classify_logs_node` | Sends logs to GPT-4o-mini to identify suspicious activity and return a confidence score |
-| `should_continue` | Decision node — if confidence >= 0.5, proceed. Otherwise fetch more logs and retry |
+| `should_continue` | Decision node - if confidence >= 0.5, proceed. Otherwise fetch more logs and retry |
 | `fetch_more_information_node` | Slides the time window forward by 5 minutes and fetches the next batch of logs |
 | `mitre_mapping_node` | Maps findings to MITRE ATT&CK tactics and techniques |
 | `enrich_context_node` | Pivots on hostname, process ID, and timestamp to pull related logs for full context |
@@ -46,20 +46,20 @@ graph TD
 
 The agent generates a structured markdown report that includes:
 
-- **Executive Summary** — management-level overview
-- **Technical Findings** — detailed breakdown of suspicious activity
-- **Attack Timeline** — chronological sequence of events
-- **Affected Assets** — systems, accounts, and processes involved
-- **MITRE ATT&CK Summary** — mapped TTPs with technique IDs
-- **KQL Hunting Queries** — ready-to-use Elastic queries to hunt for the same activity
-- **Recommendations** — immediate containment and remediation steps
-- **Overall Threat Level** — BENIGN / LOW / MEDIUM / HIGH / CRITICAL
+- **Executive Summary** - management-level overview
+- **Technical Findings** - detailed breakdown of suspicious activity
+- **Attack Timeline** - chronological sequence of events
+- **Affected Assets** - systems, accounts, and processes involved
+- **MITRE ATT&CK Summary** - mapped TTPs with technique IDs
+- **KQL Hunting Queries** - ready-to-use Elastic queries to hunt for the same activity
+- **Recommendations** - immediate containment and remediation steps
+- **Overall Threat Level** - BENIGN / LOW / MEDIUM / HIGH / CRITICAL
 
 ---
 
 ## 🗂️ Dataset
 
-This agent was built and tested using the [https://github.com/OTRF/Security-Datasets](https://github.com/OTRF/detection-hackathon-apt29) — specifically the APT29 detection hackathon dataset which simulates real adversary TTPs including credential dumping, lateral movement, and persistence.
+This agent was built and tested using the [https://github.com/OTRF/Security-Datasets](https://github.com/OTRF/detection-hackathon-apt29) - specifically the APT29 detection hackathon dataset which simulates real adversary TTPs including credential dumping, lateral movement, and persistence.
 
 The dataset is ingested into an Elastic Cloud index named `malicious_activity`.
 
@@ -67,11 +67,11 @@ The dataset is ingested into an Elastic Cloud index named `malicious_activity`.
 
 ## 🛠️ Tech Stack
 
-- **[LangGraph](https://github.com/langchain-ai/langgraph)** — state machine orchestration for the agent
-- **[GPT-4o-mini](https://platform.openai.com/docs/models)** — threat classification and report generation via OpenAI API
-- **[Elastic Cloud](https://www.elastic.co/cloud)** — SIEM data source
-- **[LangChain OpenAI](https://python.langchain.com/)** — LLM wrapper
-- **Python** — everything is written in a single Jupyter notebook
+- **[LangGraph](https://github.com/langchain-ai/langgraph)** - state machine orchestration for the agent
+- **[GPT-4o-mini](https://platform.openai.com/docs/models)** - threat classification and report generation via OpenAI API
+- **[Elastic Cloud](https://www.elastic.co/cloud)** - SIEM data source
+- **[LangChain OpenAI](https://python.langchain.com/)** - LLM wrapper
+- **Python** - everything is written in a single Jupyter notebook
 
 ---
 
@@ -128,7 +128,7 @@ ai-threat-hunting-agent/
 
 ## 🤝 Contributing
 
-This is an open source project and all contributions are welcome — whether it's fixing a bug, improving a prompt, adding a new data source, or extending the agent with new capabilities.
+This is an open source project and all contributions are welcome - whether it's fixing a bug, improving a prompt, adding a new data source, or extending the agent with new capabilities.
 
 To contribute:
 
