@@ -1,0 +1,6 @@
+langgraph
+langchain-core
+langchain-openai
+openai
+elasticsearch
+python-dotenv
