@@ -145,11 +145,8 @@ If you have ideas for improvements or run into issues, feel free to open an Issu
 ## 📌 Roadmap
 
 - [ ] Add VirusTotal API integration for IOC enrichment
-- [ ] Support for additional Sysmon EventIDs (3, 7, 11)
 - [ ] FastAPI backend for REST API access
-- [ ] Frontend dashboard for report visualization
-- [ ] Support for custom SIEM data sources beyond Elastic
-
+- [ ] Migrate the agent to cloud and launch it as a chrome extension
 ---
 
 ## ⭐ If you found this useful, drop a star on the repo!
