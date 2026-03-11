@@ -59,7 +59,7 @@ The agent generates a structured markdown report that includes:
 
 ## 🗂️ Dataset
 
-This agent was built and tested using the ([https://github.com/OTRF/Security-Datasets](https://github.com/OTRF/detection-hackathon-apt29) — specifically the APT29 detection hackathon dataset which simulates real adversary TTPs including credential dumping, lateral movement, and persistence.
+This agent was built and tested using the [https://github.com/OTRF/Security-Datasets](https://github.com/OTRF/detection-hackathon-apt29) — specifically the APT29 detection hackathon dataset which simulates real adversary TTPs including credential dumping, lateral movement, and persistence.
 
 The dataset is ingested into an Elastic Cloud index named `malicious_activity`.
 
