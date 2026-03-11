@@ -80,8 +80,8 @@ The dataset is ingested into an Elastic Cloud index named `malicious_activity`.
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/ai-threat-hunting-agent.git
-cd ai-threat-hunting-agent
+git clone https://github.com/SparshLadani/Threat-Hunting-AI-Agent.git
+cd Threat-Hunting-AI-Agent
 ```
 
 ### 2. Install dependencies
@@ -108,7 +108,7 @@ Download the [Mordor APT29 dataset](https://github.com/OTRF/detection-hackathon-
 
 ### 5. Run the agent
 
-Open `agent.ipynb` in Jupyter and run all cells. The report will be saved as `report.md` in the root directory.
+Open `agent.ipynb` in Jupyter and run all cells. The report will be saved as `report.md` in the current working directory of the AI agent.
 
 ---
 
