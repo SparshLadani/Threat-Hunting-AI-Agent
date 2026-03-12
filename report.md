@@ -1,7 +1,7 @@
 # THREAT HUNTING REPORT
 
 ## EXECUTIVE SUMMARY:
-O`n May 1, 2020, suspicious activities were detected on the systems within the organization, specifically involving the process `CollectGuestLogs.exe`. The analysis indicates potential misuse of this data collection tool, which may lead to unauthorized data exfiltration. Immediate containment actions are recommended to mitigate any potential threats.
+`On May 1, 2020, suspicious activities were detected on the systems within the organization, specifically involving the process `CollectGuestLogs.exe`. The analysis indicates potential misuse of this data collection tool, which may lead to unauthorized data exfiltration. Immediate containment actions are recommended to mitigate any potential threats.
 
 ## TECHNICAL FINDINGS:
 The threat hunting analysis revealed multiple suspicious events associated with the execution of `CollectGuestLogs.exe` on the host `NASHUA.dmevals.local`. The following key findings were noted:
@@ -85,4 +85,5 @@ The threat hunting analysis revealed multiple suspicious events associated with 
    - Implement stricter access controls and monitoring for sensitive data and administrative tools.
 
 ## OVERALL THREAT LEVEL: MEDIUM
+
 The analysis indicates a medium threat level due to the potential for data exfiltration and misuse of administrative privileges. Immediate actions are necessary to mitigate risks and prevent further incidents.
