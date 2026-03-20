@@ -1,4 +1,4 @@
-# 🛡️ AI Threat Hunting Agent
+# AI Threat Hunting Agent
 
 An autonomous AI-powered threat hunting agent built with LangGraph, GPT-4o-mini, and Elastic SIEM. It fetches real attack logs, classifies threats, maps them to the MITRE ATT&CK framework, enriches context, and generates a formal SOC-ready incident report - all without human intervention.
 
@@ -6,13 +6,13 @@ An autonomous AI-powered threat hunting agent built with LangGraph, GPT-4o-mini,
 
 ---
 
-## 🎥 Demo
+## Demo
 
 https://github.com/user-attachments/assets/028b58d5-e304-4063-82d0-a3be0d783cda
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 The agent is built as a LangGraph state machine where each node has a specific job. Here's the full flow:
 
@@ -42,7 +42,7 @@ graph TD
 
 ---
 
-## 📄 Sample Report Output
+## Sample Report Output
 
 The agent generates a structured markdown report that includes:
 
@@ -57,7 +57,7 @@ The agent generates a structured markdown report that includes:
 
 ---
 
-## 🗂️ Dataset
+## Dataset
 
 This agent was built and tested using the [https://github.com/OTRF/Security-Datasets](https://github.com/OTRF/detection-hackathon-apt29) - specifically the APT29 detection hackathon dataset which simulates real adversary TTPs including credential dumping, lateral movement, and persistence.
 
@@ -65,7 +65,7 @@ The dataset is ingested into an Elastic Cloud index named `malicious_activity`.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **[LangGraph](https://github.com/langchain-ai/langgraph)** - state machine orchestration for the agent
 - **[GPT-4o-mini](https://platform.openai.com/docs/models)** - threat classification and report generation via OpenAI API
@@ -75,7 +75,7 @@ The dataset is ingested into an Elastic Cloud index named `malicious_activity`.
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 ### 1. Clone the repo
 
@@ -112,7 +112,7 @@ Open `agent.ipynb` in Jupyter and run all cells. The report will be saved as `re
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ai-threat-hunting-agent/
@@ -126,7 +126,7 @@ ai-threat-hunting-agent/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 This is an open source project and all contributions are welcome - whether it's fixing a bug, improving a prompt, adding a new data source, or extending the agent with new capabilities.
 
@@ -142,11 +142,12 @@ If you have ideas for improvements or run into issues, feel free to open an Issu
 
 ---
 
-## 📌 Roadmap
+## Roadmap
 
 - [ ] Add VirusTotal API integration for IOC enrichment
 - [ ] FastAPI backend for REST API access
 - [ ] Migrate the agent to cloud and launch it as a chrome extension
+
 ---
 
-## ⭐ If you found this useful, drop a star on the repo!
+If you found this useful, drop a star on the repo!
